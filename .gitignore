@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+*.venv
+.env
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / agent build
+agent/node_modules/
+# agent/dist/agent.js is intentionally committed (pre-built for pip users)
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# soxtract output
+soxtract_out/

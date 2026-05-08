@@ -1,0 +1,27 @@
+[soxtract]
+# Memory read chunk size in bytes (default: 262144 = 256 KB)
+chunk_size = 262144
+
+# How often to scan memory for new ELF headers, in milliseconds (default: 5000)
+scan_interval = 5000
+
+# Delay after dlopen returns before reading the new module, in ms (default: 250)
+loader_delay = 250
+
+# Number of retry attempts on memory read failure (default: 3)
+retries = 3
+
+# Initial retry backoff in ms — doubles on each attempt (default: 500)
+retry_backoff_ms = 500
+
+# Set to false to skip ELF repair and save the raw memory dump as .so (default: true)
+fix_elf = true
+
+# Spawn the target app instead of attaching to a running process (default: false)
+spawn = false
+
+# Stop after this many seconds; 0 means run until Ctrl-C (default: 0)
+timeout = 0
+
+# Logging level: DEBUG, INFO, WARNING, ERROR (default: INFO)
+log_level = "INFO"

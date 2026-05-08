@@ -1,0 +1,16 @@
+{
+  "name": "sosaver-agent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "frida-compile src/index.ts -o dist/agent.js",
+    "watch": "frida-compile src/index.ts -o dist/agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^19.0.2",
+    "frida-compile": "^19.0.5"
+  },
+  "dependencies": {
+    "frida-java-bridge": "^7.0.13"
+  }
+}
