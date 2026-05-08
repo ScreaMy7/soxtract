@@ -2,7 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/soxtract)](https://pypi.org/project/soxtract/)
 [![Python](https://img.shields.io/pypi/pyversions/soxtract)](https://pypi.org/project/soxtract/)
-[![CI](https://github.com/ScreaMy7/soxtract/actions/workflows/ci.yml/badge.svg)](https://github.com/ScreaMy7/soxtract/actions)
+
 
 Dynamically extract native `.so` libraries from running Android applications using Frida.
 Extracted files are automatically repaired into valid ELF binaries ready for analysis in
@@ -213,26 +213,3 @@ soxtract/
 ```
 
 ---
-
-## Running tests
-
-```bash
-python3 -m pytest tests/
-```
-
----
-
-## Publishing a new release
-
-```bash
-# 1. Bump version in pyproject.toml
-# 2. If agent changed, rebuild and copy:
-cd agent && npm run build && cp dist/agent.js ../soxtract/agent.js && cd ..
-# 3. Commit, tag and push
-git add -A && git commit -m "release: v0.x.0"
-git tag v0.x.0 && git push origin main --tags
-# 4. Build and upload to PyPI
-rm -rf dist/
-python -m hatchling build
-twine upload dist/* --username __token__ --password YOUR_PYPI_TOKEN
-```
