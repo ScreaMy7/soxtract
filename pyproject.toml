@@ -29,8 +29,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/soxtract"
-"Bug Tracker" = "https://github.com/YOUR_USERNAME/soxtract/issues"
+Homepage = "https://github.com/ScreaMy7/soxtract"
+"Bug Tracker" = "https://github.com/ScreaMy7/soxtract/issues"
 
 [project.scripts]
 soxtract = "soxtract.cli:main"
