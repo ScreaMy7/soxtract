@@ -25,5 +25,11 @@ agent/node_modules/
 .vscode/
 .idea/
 
+# Claude Code local config
+.claude/
+
+# Personal research scripts (not part of soxtract)
+agent/src/h0*.ts
+
 # soxtract output
 soxtract_out/
